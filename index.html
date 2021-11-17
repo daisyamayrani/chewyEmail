@@ -8,7 +8,17 @@
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
     <meta name="x-apple-disable-message-reformatting">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="color-scheme" content="light dark">
+
     <style type="text/css">
+      @media (prefers-color-scheme: dark) {
+            .darkmode {
+              background-color: #1e1e1e !important;
+            }
+            .darkmode p {
+              color: #ffffff !important;
+            }
+        }
 
       body {
         margin: 0px;
@@ -30,19 +40,75 @@
           background-color: white!important;
         }
       }
+
+
+
       /* midsizes LESS THAN 960*/
       @media only screen and (max-width: 960px) {
         .container{
           width: 600px !important;
           background-color: white!important;
         }
+        .animal-menu .animal-menu-item {
+          width: 25% !important;
+          padding-bottom: 30px !important;
+        }
       }
+
+
+
+
+
       /* mobile LESS THAN 600*/
       @media only screen and (max-width: 600px) {
         .container{
           width: 100% !important;
           background-color: white!important;
         }
+        .container .title-table .title-right p {
+          font-size: 18px !important;
+        }
+        .pet-stuff {
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
+        .pet-stuff .pet-stuff-item {
+          width: 50% !important;
+          align-items: center !important;
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
+        .pet-stuff .pet-stuff-item img{
+          width: 80% !important;
+
+        }
+        .pet-stuff .third-item {
+          width: 100% !important;
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
+        .pet-stuff .third-item td{
+          width: 50% !important;
+          align: center !important;
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
+        .pet-stuff .third-item img{
+          width: 43% !important;
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
+        .web-options .link {
+          width: 50%;
+        }
+        .social-options {
+          padding: 20px 20px !important;
+        }
+        .social-options .social-options-items {
+
+        }
+
+
       }
     </style>
   </head>
@@ -50,29 +116,29 @@
   <body style="margin:0px;">
 
     <!-- Start of htmlemail container -->
-    <table align="center" border="0" cellspacing="0" cellpadding="0" style="width:100%; margin-top: 0px; margin-bottom: 0px; background-color: white;">
-
+    <table align="center" class="darkmode" border="0" cellspacing="0" cellpadding="0" style="width:100%; margin-top: 0px; margin-bottom: 0px;">
       <tr>
         <td>
-          <!-- CONTAINER 600 -->
-          <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%; background-color: white; margin-right: auto; margin-left: auto; padding:0px;">
+          <!-- Start of container 600 -->
+          <table class="container darkmode" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%; background-color: #fffffe !important; margin-right: auto; margin-left: auto;">
+
 
             <!--start of TITLE-ROW-->
             <tr>
               <td>
-                <table class="title-table" width="100%" align="right" cellspacing="0" cellpadding="0" border="0" style=" background-color: #1c49c2; background-color: rgb(29, 74, 193); height: auto;  padding: 0px 0px 0px 0px; margin-top: auto; margin-bottom: auto;">
+                <table class="title-table" width="100%" height="100%" align="right" cellspacing="0" cellpadding="0" border="0" style=" background-color: #1c49c2; background-color: rgb(29, 74, 193); height: 100%;  padding: 0px 0px 0px 0px; margin-top: auto; margin-bottom: auto;">
                   <tr>
-                    <td style="width: 30%;">
-                      <table align="left" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" style=" margin-right: auto; margin-left: auto; margin-top: auto; margin-bottom: auto; padding: 0px 0px; ">
+                    <td style="width: 30%" >
+                      <table  class="title-left" align="left" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" style=" margin-right: auto; margin-left: auto; margin-top: auto; margin-bottom: auto; width: 100%; padding: 20px 0px; ">
                         <tr>
-                          <td>
-                            <img src="https://i.postimg.cc/R0HTb7q2/top-chewy.png" alt="title" style="width:100%; padding-top: 10px; margin-right: auto; margin-left: auto; margin-top: 20px; margin-bottom: 20px; text-align: center; display: block;">
+                          <td  style="width: 100%">
+                            <img src="https://i.postimg.cc/R0HTb7q2/top-chewy.png" alt="title"  style=" width: 70%; height: auto; margin-right: auto; margin-left: auto; margin-top: auto; margin-bottom: auto; display: block">
                           </td>
                         </tr>
                       </table>
                     </td>
-                    <td style="width: 70%;">
-                      <table align="right" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" style=" margin-right: auto; margin-left: auto; margin-top: auto; margin-bottom: auto; padding: 0px 0px; ">
+                    <td style="width: 60%" >
+                      <table class="title-right" align="right" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" style=" margin-right: auto; margin-left: auto; margin-top: auto; margin-bottom: auto; padding: 0px 0px; ">
                         <tr>
                           <td>
                             <p style="  font-size: 25px; font-family: sans-serif; font-weight: 800; color: white; text-align: center; width:100%;  display: block;">
@@ -200,14 +266,14 @@
                       <table align="left" width="50%" height="100%" cellspacing="0" cellpadding="0" border="0" style=" margin-right: auto; margin-left: auto; width: 50%; padding: 0px 0px; ">
                         <tr>
                           <td>
-                            <img src="https://i.postimg.cc/63zBsGmf/disney.png" alt="Disney Pluto plush toy" style="width: 100%; padding: 0px 0px; ">
+                            <img src="https://i.postimg.cc/63zBsGmf/disney.png" alt="Disney Pluto plush toy" style="width: 100%; padding: 0px 0px; display: block;">
                           </td>
                         </tr>
                       </table>
                       <table align="right" width="50%" height="100%" cellspacing="0" cellpadding="0" border="0"  style=" margin-right: auto; margin-left: auto; width: 50%; padding: 0px 0px;">
                         <tr>
                           <td>
-                            <img src="https://i.postimg.cc/VkM1fhh6/marvel.png" alt="Marvel Captain America plush toy" style="width: 100%;  padding: 0px 0px; ">
+                            <img src="https://i.postimg.cc/VkM1fhh6/marvel.png" alt="Marvel Captain America plush toy" style="width: 100%;  padding: 0px 0px; display: block;">
                           </td>
                         </tr>
                       </table>
@@ -288,10 +354,10 @@
             <!--start of ACROSS-ROW FAN-TASTIC-->
             <tr>
               <td>
-                <table class="across-banner fan-tastic" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background-color: white; margin-top: 0px; margin-bottom: 0px; margin-left: auto; margin-right: auto;">
+                <table class="across-banner fan-tastic" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0px; background-color: white; margin-top: 0px; margin-bottom: 0px; margin-left: auto; margin-right: auto;">
                   <tr>
                     <td align="center">
-                      <img src="https://i.postimg.cc/g0WXyQLX/fan-tastic.png" alt="Fantastic gear, looks, and beds" style="width: 70%; margin-left: auto; margin-right: auto; ">
+                      <img src="https://i.postimg.cc/g0WXyQLX/fan-tastic.png" alt="Fantastic gear, looks, and beds" style="width: 70%; margin-left: auto; margin-right: auto;  display: block;">
                     </td>
                   </tr>
                 </table>
@@ -304,27 +370,27 @@
             <!--start of ACROSS-ROW PET-STUFF-->
             <tr>
               <td>
-                <table class="across-banner pet-stuff" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px 0px 0px; background-color: white; margin-top: 0px; margin-bottom: 0px; padding: 0px; margin-left: 0px; margin-right: 0px;">
+                <table class="across-banner pet-stuff" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px 0px 0px; background-color: #fffffe; margin-top: 0px; margin-bottom: 0px; padding: 0px; margin-left: auto; margin-right: auto;">
                   <tr>
                     <td>
-                      <table width="33.3%" height="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background-color: white; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding: 0px; ">
+                      <table class="pet-stuff-item" width="32%" height="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background-color: #fffffe; margin-top: auto; margin-bottom: auto; margin-left: 0px; margin-right: 0px; padding: 0px; ">
                         <tr>
                           <td>
-                            <img src="https://i.postimg.cc/gjnFftRG/pet-stuff-leash.png" alt="couple" style="width: 100%; height:100%; display: block;">
+                            <img src="https://i.postimg.cc/gjnFftRG/pet-stuff-leash.png" alt="couple" style="width: 100%;  display: block; margin-left: auto; margin-right:auto; border-radius: 40px; padding: 20px 0px;">
                           </td>
                         </tr>
                       </table>
-                      <table width="33.3%" height="100%" align="right" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background-color: white; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding: 0px; ">
+                      <table  class="pet-stuff-item" width="32%" height="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background-color: #fffffe; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding: 0px; ">
                         <tr>
                           <td>
-                            <img src="https://i.postimg.cc/05pj8czc/pet-stuff-bed.png" alt="couple" style="width: 100%; height:100%; display: block;">
+                            <img src="https://i.postimg.cc/05pj8czc/pet-stuff-bed.png" alt="couple" style="width: 100%;  display: block; margin-left: auto; margin-right:auto; border-radius: 40px; padding: 20px 0px;">
                           </td>
                         </tr>
                       </table>
-                      <table width="33.3%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background-color: white; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;  padding: 0px; ">
+                      <table  class="pet-stuff-item third-item" width="32%" height="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background-color: #fffffe; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding: 0px; ">
                         <tr>
                           <td>
-                            <img src="https://i.postimg.cc/HL9g5yd1/pet-stuff-apparel.png" alt="couple" style="width: 100%; height:100%; display: block;">
+                            <img src="https://i.postimg.cc/HL9g5yd1/pet-stuff-apparel.png" alt="couple" style="width: 100%;  display: block; margin-left: auto; margin-right:auto; border-radius: 40px; padding: 20px 0px;">
                           </td>
                         </tr>
                       </table>
@@ -343,7 +409,7 @@
                 <table class="across-banner explore-world" width="92%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white; margin-top: 0px; margin-bottom: 0px; padding: 0px 0px 40px 0px; ">
                   <tr>
                     <td>
-                      <img src="https://i.postimg.cc/Z53vd4nz/explore-world.png" alt="Explore the world or Disney" style="width: 100%; height:100%; ">
+                      <img src="https://i.postimg.cc/Z53vd4nz/explore-world.png" alt="Explore the world or Disney" style="width: 100%; height:100%;  display: block; ">
                     </td>
                   </tr>
                 </table>
@@ -359,8 +425,8 @@
                 <table class="across-banner call-us" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background-color: #1c49c2; background-color: rgb(29, 74, 193); margin-top: 0px; margin-bottom: 0px; padding: 0px 20px; ">
                   <tr>
                     <td>
-                      <p style=" font-size: 23px; font-family: sans-serif; font-weight: 800; color: white; text-align: center; padding-right: 8px; padding-top: 8px; ">
-                        Call us 24/7 at 1-800-672-4399
+                      <p style=" font-size: 23px; font-family: sans-serif; font-weight: 800; color: #fffffe; text-align: center; padding-right: 8px; padding-top: 8px; ">
+                        Call us 24/7 at <a href="tel:18006724399" style="color: #fffffe; text-decoration: none;">1-800-672-4399</a>
                       </p>
                     </td>
                   </tr>
@@ -431,32 +497,65 @@
                   cellspacing="0"
                   cellpadding="0"
                   border="0"
-                  style="padding: 20px 0px; background-color: white; margin-top: 0px; margin-bottom: 0px; font-weight: 800; font-size:12px; border-bottom: 1px solid #cccccc;">
+                  style="padding: 20px 0px; background-color: white; margin-top: 0px; margin-bottom: 0px; margin-right: auto; margin-left: auto; font-weight: 800; font-size:12px; border-bottom: 1px solid #cccccc;">
                   <tr>
-                    <td align="center">
-                      <a style="width: 60%; height:70%; ">DEALS</a>
+                    <td>
+                      <table class="animal-menu-item" width="12%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <a style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align:center; ">DEALS</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="animal-menu-item" width="12%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <a style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align:center; ">DOG</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="animal-menu-item" width="12%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <a style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align:center; ">CAT</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="animal-menu-item" width="12%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <a style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align:center; ">FISH</a>
+                        </tr>
+                      </table>
+                      <table class="animal-menu-item" width="12%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <a style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align:center; ">BIRD</a>
+                        </tr>
+                      </table>
+                      <table class="animal-menu-item" width="12%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <a style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align:center; ">SMALL PET</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="animal-menu-item" width="12%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <a style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align:center; ">REPTILE</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="animal-menu-item" width="12%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <a style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align:center; ">HORSE</a>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                    <td align="center">
-                      <a style="width: 60%; height:70%; ">DOG</a>
-                    </td>
-                    <td align="center">
-                      <a style="width: 60%; height:70%; ">CAT</a>
-                    </td>
-                    <td align="center">
-                      <a style="width: 60%; height:70%; ">FISH</a>
-                    </td>
-                    <td align="center">
-                      <a style="width: 60%; height:70%; ">BIRD</a>
-                    </td>
-                    <td align="center">
-                      <a style="width: 60%; height:70%; ">SMALL PET</a>
-                    </td>
-                    <td align="center">
-                      <a style="width: 60%; height:70%; ">REPTILE</a>
-                    </td>
-                    <td align="center">
-                      <a style="width: 60%; height:70%; ">HORSE</a>
-                    </td>
+
                   </tr>
                 </table>
               </td>
@@ -468,20 +567,40 @@
             <!--start of FOUR-SECTION-ROW WEB-OPTIONS-->
             <tr>
               <td>
-                <table class="four-section web-options" width="85%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 8px 60px; background-color: white; margin-top: 0px; margin-bottom: 0px; border-bottom: 1px solid #cccccc;">
+                <table class="four-section web-options" width="85%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 8px 30px; background-color: white; margin-top: 0px; margin-bottom: 0px; border-bottom: 1px solid #cccccc;">
                   <tr>
-                    <td align="center">
-                      <img src="https://i.postimg.cc/0yJ56jz9/app.png" alt="app link" style="width: 50%; height:70%; ">
+                    <td>
+                      <table class="" width="25%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <img src="https://i.postimg.cc/0yJ56jz9/app.png" alt="app link" style="width: 80%; margin-right: auto; margin-left: auto; display: block; ">
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="" width="25%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <img src="https://i.postimg.cc/CKg0zNy4/pet-profile.png" alt="pet profile link" style="width: 80%; margin-right: auto; margin-left: auto; display: block; ">
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="" width="25%" align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <img src="https://i.postimg.cc/9MxHgHDx/pharmacy.png" alt="phamracy link" style="width: 80%; margin-right: auto; margin-left: auto; display: block; ">
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="" width="25%"  align="left" cellspacing="0" cellpadding="0" border="0" >
+                        <tr>
+                          <td>
+                            <img src="https://i.postimg.cc/3JqJJmJL/blog.png" alt="blog link" style="width: 80%; margin-right: auto; margin-left: auto; display: block; ">
+                          </td>
+                        </tr>
+                      </table>
+
                     </td>
-                    <td align="center">
-                      <img src="https://i.postimg.cc/CKg0zNy4/pet-profile.png" alt="pet profile link" style="width: 50%; height:70%; ">
-                    </td>
-                    <td align="center">
-                      <img src="https://i.postimg.cc/9MxHgHDx/pharmacy.png" alt="phamracy link" style="width: 50%; height:70%; ">
-                    </td>
-                    <td align="center">
-                      <img src="https://i.postimg.cc/3JqJJmJL/blog.png" alt="blog link" style="width: 50%; height:70%; ">
-                    </td>
+
                   </tr>
                 </table>
               </td>
@@ -493,19 +612,41 @@
             <!--start of FOUR-SECTION-ROW SOCIAL-OPTIONS-->
             <tr>
               <td>
-                <table class="four-section social-options" width="85%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 170px; background-color: white; margin-top: 0px; margin-bottom: 0px; color: #777777; font-size: 18px;">
+                <table class="four-section social-options" width="85%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white; border-bottom: 1px solid #cccccc; padding: 20px 170px; margin-top: 0px; margin-bottom: 0px; color: #777777; font-size: 18px;">
                   <tr>
-                    <td align="center">
-                      <i class="fab fa-facebook-f" style="width: 100%; height:70%; "></i>
-                    </td>
-                    <td align="center">
-                      <i class="fab fa-twitter" style="width: 100%; height:70%; "></i>
-                    </td>
-                    <td align="center">
-                      <i class="fab fa-youtube" style="width: 100%; height:70%;"></i>
-                    </td>
-                    <td align="center">
-                      <i class="fab fa-instagram" style="width: 100%; height:70%; "></i>
+                    <td>
+                      <table class="social-options-item" width="25%" align="left" cellspacing="0" cellpadding="0" border="0" style="margin-right: auto; margin-left: auto;">
+                        <tr>
+                          <td>
+                            <i class="fab fa-facebook-f" style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align: center;"></i>
+
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="social-options-item" width="25%"  align="left" cellspacing="0" cellpadding="0" border="0" style="margin-right: auto; margin-left: auto;">
+                        <tr>
+                          <td>
+                            <i class="fab fa-twitter" style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align: center;"></i>
+
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="social-options-item" width="25%" align="left" cellspacing="0" cellpadding="0" border="0" style="margin-right: auto; margin-left: auto;">
+                        <tr>
+                          <td>
+                            <i class="fab fa-youtube" style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align: center;"></i>
+
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="social-options-item" width="25%"  align="left" cellspacing="0" cellpadding="0" border="0" style="margin-right: auto; margin-left: auto;">
+                        <tr>
+                          <td>
+                            <i class="fab fa-instagram" style="width: 80%; margin-right: auto; margin-left: auto; display: block; text-align: center;"></i>
+
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
@@ -569,7 +710,7 @@
                   </tr>
                   <tr>
                     <td align="center">
-                      <img style="margin-top: 15px; width: 25%;" src="https://i.postimg.cc/8CQpLGvM/chewy-grey.png" alt="chewy logo">
+                      <img style="margin-top: 15px; width: 25%; display: block; border-radius: 40px; " src="https://i.postimg.cc/8CQpLGvM/chewy-grey.png" alt="chewy logo">
                     </td>
                   </tr>
                 </table>
